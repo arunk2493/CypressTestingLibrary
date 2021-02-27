@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-27T18:54:56.958Z",
+    "end": "2021-02-27T18:55:00.762Z",
+    "duration": 3804,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "65a2951b-e835-48b4-a3fd-eb837d1d1e73",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67a108bb-f030-4d23-9e69-70aba333415f",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2017,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "85b55257-5791-4d05-a791-d90ff1b4baa1",
+              "parentUUID": "67a108bb-f030-4d23-9e69-70aba333415f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85b55257-5791-4d05-a791-d90ff1b4baa1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2017,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

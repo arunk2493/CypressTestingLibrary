@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="0.0000" tests="1" failures="1">
+  <testsuite name="Root Suite" timestamp="2021-02-27T15:20:42" tests="0" file="cypress/integration/examples/login2.spec.ts" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Git hub Login" timestamp="2021-02-27T15:20:42" tests="1" time="0.0000" failures="1">
+    <testcase name="Git hub Login Login to GitHub" time="0.0000" classname="Login to GitHub">
+      <failure message="Timed out retrying after 4000ms: expected &apos;&lt;div.container-lg.px-2&gt;&apos; to have text &apos;Incorrect username or password.&apos;, but the text was &apos;\n    \n      \n    \n    \n      Incorrect username or password.\n\n  &apos;" type="AssertionError"><![CDATA[AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\n    \n      \n    \n    \n      Incorrect username or password.\n\n  '
+    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)]]></failure>
+    </testcase>
+  </testsuite>
+</testsuites>

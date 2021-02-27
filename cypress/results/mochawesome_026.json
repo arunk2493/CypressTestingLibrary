@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-02-27T18:55:20.199Z",
+    "end": "2021-02-27T18:55:22.516Z",
+    "duration": 2317,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9b4d1c63-bcdc-4289-8b93-e9511f5c9024",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e25d237b-45c3-463d-9130-9b0be7a5e496",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "f3224476-2194-4c66-b762-e2ec9579acdc",
+              "parentUUID": "e25d237b-45c3-463d-9130-9b0be7a5e496",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3224476-2194-4c66-b762-e2ec9579acdc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

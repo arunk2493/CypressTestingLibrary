@@ -1,0 +1,41 @@
+{
+  "name": "cypresstestinglibrary",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^6.5.0",
+    "mocha": "^8.3.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  },
+  "devDependencies": {
+    "@testing-library/cypress": "^7.0.4",
+    "cypress-multi-reporters": "^1.4.0",
+    "mocha-junit-reporter": "^2.0.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "scripts": {
+    "cypress_headless": "cypress run",
+    "cypress_headed": "cypress run --headed",
+    "cypress_report": "cypress run --reporter mochawesome",
+    "precypress_report": "rm -rf mochawesome.json",
+    "reportmerge": "npx mochawesome-merge \"cypress/results/*.json\" > mochawesome.json",
+    "htmlmerge": "npx marge mochawesome.json",
+    "postcypress_report": "npm run reportmerge && npm run htmlmerge",
+    "cypress_singletest_headless": "cypress run --spec cypress/integration/examples/login.spec.js",
+    "cypress_singletest_headed": "cypress run --headed --spec cypress/integration/examples/login.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunk2493/CypressTestingLibrary.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunk2493/CypressTestingLibrary/issues"
+  },
+  "homepage": "https://github.com/arunk2493/CypressTestingLibrary#readme"
+}

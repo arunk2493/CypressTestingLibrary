@@ -1,0 +1,2295 @@
+{
+  "stats": {
+    "suites": 38,
+    "tests": 38,
+    "passes": 27,
+    "pending": 0,
+    "failures": 11,
+    "start": "2021-02-27T15:24:41.858Z",
+    "end": "2021-02-27T19:00:10.974Z",
+    "duration": 110728,
+    "testsRegistered": 38,
+    "passPercent": 71.05263157894737,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "be7e6281-28a3-46a4-b7a6-1f1c747e1fb1",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "032456c6-6d54-4aca-94c7-62c209a37522",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 6202,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "c4d57c44-80c6-41b4-ae14-e3fa1400d6c7",
+              "parentUUID": "032456c6-6d54-4aca-94c7-62c209a37522",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c4d57c44-80c6-41b4-ae14-e3fa1400d6c7"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6202,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "eef8417e-53a2-4691-abb4-43d77841b720",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9fc127a1-842a-40ce-8749-e718acba5193",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2067,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "ce15cbcd-81fb-4e87-b697-d666663d8335",
+              "parentUUID": "9fc127a1-842a-40ce-8749-e718acba5193",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "ce15cbcd-81fb-4e87-b697-d666663d8335"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2067,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "ecc0d667-e488-452d-a0aa-f5158668abfb",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cc3aa54f-2d28-4766-a19c-d96341225676",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 6047,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "dbd5c83f-1b66-4aa4-8417-37856ce4fd36",
+              "parentUUID": "cc3aa54f-2d28-4766-a19c-d96341225676",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "dbd5c83f-1b66-4aa4-8417-37856ce4fd36"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6047,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "41cc8179-2320-4580-b8a1-2029194c066e",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "76aae25e-3fa6-4f86-b04c-889d845191cd",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 1961,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "db15373b-6d6f-4fc5-81d1-9dad6a1e82bd",
+              "parentUUID": "76aae25e-3fa6-4f86-b04c-889d845191cd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "db15373b-6d6f-4fc5-81d1-9dad6a1e82bd"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1961,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "45259d70-fcac-4dc8-90a0-e71656c4847f",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c6d2e356-9af4-4a24-83c7-b41a59ee9c3c",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 6165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "925b9f8b-9118-494f-9bbd-f3e566463f4c",
+              "parentUUID": "c6d2e356-9af4-4a24-83c7-b41a59ee9c3c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "925b9f8b-9118-494f-9bbd-f3e566463f4c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "49e8bb3b-084b-4f83-ab36-33db15d461de",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1dad37a1-cd41-47fc-a0f1-61cb73c5b1ea",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 1961,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "78f8d6ae-78b5-4d4d-92ea-b53e1b51e4b9",
+              "parentUUID": "1dad37a1-cd41-47fc-a0f1-61cb73c5b1ea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "78f8d6ae-78b5-4d4d-92ea-b53e1b51e4b9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1961,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6d9f365c-1f5d-461a-b509-79b0b2d6c5ac",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "31803d89-0dd9-414a-95f4-65965072ce91",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6153,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "1ebdc112-1656-4b32-b2fc-311c861c6ca4",
+              "parentUUID": "31803d89-0dd9-414a-95f4-65965072ce91",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "1ebdc112-1656-4b32-b2fc-311c861c6ca4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6153,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "877b9043-7437-4bf1-b9e2-ecd36c565d4a",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cff77b66-d569-4a12-a5ba-54047e67d51b",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2279,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "561404e3-e686-4c28-a7a2-aef64b6d6415",
+              "parentUUID": "cff77b66-d569-4a12-a5ba-54047e67d51b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "561404e3-e686-4c28-a7a2-aef64b6d6415"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2279,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7c431d42-c024-425c-8823-af19506b27d3",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e33dfbe0-e36c-48bb-80c3-14c5058063d3",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6526,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "cb248bb2-aeb1-4662-a1f8-b07cd7366d5c",
+              "parentUUID": "e33dfbe0-e36c-48bb-80c3-14c5058063d3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cb248bb2-aeb1-4662-a1f8-b07cd7366d5c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6526,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dd117f0d-e1eb-4c2f-8dfc-12ede3794e8d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7387befa-7515-43e8-b494-9f56401be415",
+          "title": "Git hub Login Assertion Passed",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Passed Login to GitHub",
+              "timedOut": null,
+              "duration": 1929,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nvar a = cy.get('.flash >div').contains('Incorrect username or password.');\nconsole.log(a);",
+              "err": {},
+              "uuid": "c666c50a-aa1b-4ea8-ac91-07f62aeef8a0",
+              "parentUUID": "7387befa-7515-43e8-b494-9f56401be415",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c666c50a-aa1b-4ea8-ac91-07f62aeef8a0"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "aea7dfa0-45c0-4dc4-b3b3-ddefa24a5df6",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b1ac3d83-f769-4dfb-b7a3-0fa62369ee4a",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2041,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "186c86e0-c576-4edc-ad53-6f8e17d756a5",
+              "parentUUID": "b1ac3d83-f769-4dfb-b7a3-0fa62369ee4a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "186c86e0-c576-4edc-ad53-6f8e17d756a5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2041,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fd899080-004d-4a7a-8e59-9d0d03dd7de1",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "02128eb4-4caf-45dc-af7c-79d0356cd43d",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6098,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "cc8851a5-e60b-44eb-8332-3c827b269741",
+              "parentUUID": "02128eb4-4caf-45dc-af7c-79d0356cd43d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "cc8851a5-e60b-44eb-8332-3c827b269741"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6098,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "11b3b4f4-cadb-4020-a4ef-afdfb9f9fc73",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d16de3ac-6b19-47b3-b1fb-10ba8f1d00bf",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 617,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "9aa2134d-9056-43b8-ac02-07e1d4f430d3",
+              "parentUUID": "d16de3ac-6b19-47b3-b1fb-10ba8f1d00bf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9aa2134d-9056-43b8-ac02-07e1d4f430d3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 617,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "bae5500d-18c4-4f5b-bd90-7c1c33dba96b",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "52074908-08ff-4f93-848f-ec514552caad",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1181,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "b1dbb4c1-5982-42c0-bf85-89e1fb6b28a8",
+              "parentUUID": "52074908-08ff-4f93-848f-ec514552caad",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b1dbb4c1-5982-42c0-bf85-89e1fb6b28a8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1181,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6c1f8511-61b9-46f1-9f85-8d530e5e5493",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "91e4b85b-089c-4dc6-af11-bc6c50722d69",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2168,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "0fe683e3-f7aa-441c-9ed5-8692b9381765",
+              "parentUUID": "91e4b85b-089c-4dc6-af11-bc6c50722d69",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0fe683e3-f7aa-441c-9ed5-8692b9381765"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2168,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "da427fb6-d2a9-4eb3-8db0-2be8edf79847",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3609edab-6453-424d-b687-52473ee897cb",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6172,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "b385f97c-3d9d-46b5-ac80-535d8ca845ba",
+              "parentUUID": "3609edab-6453-424d-b687-52473ee897cb",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b385f97c-3d9d-46b5-ac80-535d8ca845ba"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6172,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "29b2b5ae-e910-48b2-b3c0-b892584e76eb",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2073bba4-85dd-4155-b8ba-8cd97d41ab90",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 687,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "13728b99-3a5b-440b-98a5-4a6de1ac3452",
+              "parentUUID": "2073bba4-85dd-4155-b8ba-8cd97d41ab90",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "13728b99-3a5b-440b-98a5-4a6de1ac3452"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 687,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2edd3507-0948-4886-adb1-524b4e50fd54",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b2749c82-d5e2-4ed5-92d7-68d0ea693d55",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1199,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "18d69fcd-9ecf-4b90-8cda-a1611d2a10cc",
+              "parentUUID": "b2749c82-d5e2-4ed5-92d7-68d0ea693d55",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "18d69fcd-9ecf-4b90-8cda-a1611d2a10cc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1199,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c3727d8f-e6d0-4f70-b7f7-039729dd1704",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f7ba0c3d-7041-49a3-a30e-03a8f6d04e6d",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2159,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "10d0669d-f6cf-4e75-b44d-fd4627a1985f",
+              "parentUUID": "f7ba0c3d-7041-49a3-a30e-03a8f6d04e6d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "10d0669d-f6cf-4e75-b44d-fd4627a1985f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2159,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "02e9a436-c2b1-4fd4-b92c-69510853c610",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b480b0d7-e5b6-42df-8912-e96f81910598",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6199,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "b41020ab-bf57-4e9c-8d44-4429c76aa6b8",
+              "parentUUID": "b480b0d7-e5b6-42df-8912-e96f81910598",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b41020ab-bf57-4e9c-8d44-4429c76aa6b8"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6199,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "e8d10646-e8bd-477a-8cf7-21edecee2e02",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2e3586b6-086a-46bb-a70a-282f01108904",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 761,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "56faa6bd-f198-400c-81c4-1076c821334b",
+              "parentUUID": "2e3586b6-086a-46bb-a70a-282f01108904",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "56faa6bd-f198-400c-81c4-1076c821334b"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 761,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d96e7647-eaa1-438e-b708-ddc06137e21c",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e8a474cd-090c-4055-b22f-fe60fefd7fe7",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1174,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "15bcf84e-c95d-45be-8a3f-84dbbaa207ab",
+              "parentUUID": "e8a474cd-090c-4055-b22f-fe60fefd7fe7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "15bcf84e-c95d-45be-8a3f-84dbbaa207ab"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1174,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "65a2951b-e835-48b4-a3fd-eb837d1d1e73",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67a108bb-f030-4d23-9e69-70aba333415f",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2017,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "85b55257-5791-4d05-a791-d90ff1b4baa1",
+              "parentUUID": "67a108bb-f030-4d23-9e69-70aba333415f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "85b55257-5791-4d05-a791-d90ff1b4baa1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2017,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "dc7f96e5-74c8-45e6-93d9-ea9ea21f1665",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cc45f80d-1769-4860-9055-2d07cb6b76e9",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6216,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "a08adb01-392f-4eb0-bbbd-4ebc55c6fde1",
+              "parentUUID": "cc45f80d-1769-4860-9055-2d07cb6b76e9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a08adb01-392f-4eb0-bbbd-4ebc55c6fde1"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6216,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3a3d7545-1614-4a37-85bb-0a8b89cd40ad",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b1af4b79-f8fd-4568-b7e5-cdbcd38f0d10",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 772,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "431d06c7-75ce-43bf-bcc7-ce53ba7631f2",
+              "parentUUID": "b1af4b79-f8fd-4568-b7e5-cdbcd38f0d10",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "431d06c7-75ce-43bf-bcc7-ce53ba7631f2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 772,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9b4d1c63-bcdc-4289-8b93-e9511f5c9024",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e25d237b-45c3-463d-9130-9b0be7a5e496",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1165,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "f3224476-2194-4c66-b762-e2ec9579acdc",
+              "parentUUID": "e25d237b-45c3-463d-9130-9b0be7a5e496",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f3224476-2194-4c66-b762-e2ec9579acdc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "07456454-4fcc-4cc5-a8b8-278b7221f98d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8e24661f-6c69-448d-a104-dc4632ccb03e",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2131,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "8bbdea46-9f40-49eb-beb0-dcb4e1c0a7b1",
+              "parentUUID": "8e24661f-6c69-448d-a104-dc4632ccb03e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8bbdea46-9f40-49eb-beb0-dcb4e1c0a7b1"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2131,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "0eccc9db-cddf-4c43-b3c4-bc15fd0de2ca",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "cb85ad0d-5679-48e9-9128-bbb13c477a2d",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6240,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('have.text', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.container-lg.px-2>' to have text 'Incorrect username or password.', but the text was '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": "- '\\n    \\n      \\n    \\n    \\n      Incorrect username or password.\\n\\n  '\n+ 'Incorrect username or password.'\n"
+              },
+              "uuid": "88dde9d8-30de-411f-94b8-51d0994ae900",
+              "parentUUID": "cb85ad0d-5679-48e9-9128-bbb13c477a2d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "88dde9d8-30de-411f-94b8-51d0994ae900"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6240,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2524c788-7248-4b7d-8cff-dcbd49a347fb",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e71d1c4b-8bc1-42c1-a5d5-286c3a73f034",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 694,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "178ec12e-4629-4705-941a-2e84f6c6b16c",
+              "parentUUID": "e71d1c4b-8bc1-42c1-a5d5-286c3a73f034",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "178ec12e-4629-4705-941a-2e84f6c6b16c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 694,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b0caabb9-a861-4ad2-ab70-3ea6ea494862",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e36d8472-d92e-43aa-9b08-5343df90a1c7",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1154,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "29eec6a3-8eef-45e0-9499-cb01dcaeb35e",
+              "parentUUID": "e36d8472-d92e-43aa-9b08-5343df90a1c7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "29eec6a3-8eef-45e0-9499-cb01dcaeb35e"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1154,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "097c0000-b40e-4755-bbb2-6a46af1f2c64",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "25b13c0b-5b12-4346-9bb0-0921a7b1b3fe",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2015,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "2c994ef3-baa3-4846-8530-4c16322b3389",
+              "parentUUID": "25b13c0b-5b12-4346-9bb0-0921a7b1b3fe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2c994ef3-baa3-4846-8530-4c16322b3389"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2015,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9272c78f-56cf-4f10-b278-52cfcf1e821b",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login2.spec.ts",
+      "file": "cypress/integration/examples/login2.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "20246849-6dbc-4701-94e5-061673326ec6",
+          "title": "Git hub Login Assertion",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Assertion Login to GitHub",
+              "timedOut": null,
+              "duration": 6189,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\ncy.get('.flash >div').should('contains', 'Incorrect username or password.');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: object tested must be an array, a map, an object, a set, a string, or a weakset, but object given",
+                "estack": "AssertionError: Timed out retrying after 4000ms: object tested must be an array, a map, an object, a set, a string, or a weakset, but object given\n    at Context.eval (https://github.com/__cypress/tests?p=cypress/integration/examples/login2.spec.ts:104:31)",
+                "diff": null
+              },
+              "uuid": "378e613e-1c15-4d65-bb7f-ca04fc2cef72",
+              "parentUUID": "20246849-6dbc-4701-94e5-061673326ec6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "378e613e-1c15-4d65-bb7f-ca04fc2cef72"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 6189,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "17663531-833e-4e07-948c-0acfc0759a9f",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa059fce-dfea-476a-875b-fb370ee65d9a",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 2315,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "501c31a9-8b85-4aa7-903c-c9548e75a0a7",
+              "parentUUID": "fa059fce-dfea-476a-875b-fb370ee65d9a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "501c31a9-8b85-4aa7-903c-c9548e75a0a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2315,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "66ead3de-31cb-4d30-a88d-e0a559eeecea",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e19e8bf6-7478-4c78-8c7b-4f6d62f4485d",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1192,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "c7c59300-57f6-41b5-b3b8-cf04c7241411",
+              "parentUUID": "e19e8bf6-7478-4c78-8c7b-4f6d62f4485d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c7c59300-57f6-41b5-b3b8-cf04c7241411"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1192,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "93baf9cd-e6fa-4b39-8eef-13314cb56721",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e29d5c53-8f7d-4861-8231-9dc731c67222",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2001,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "3351e907-3d6b-442e-a724-f9a1abd2b1c4",
+              "parentUUID": "e29d5c53-8f7d-4861-8231-9dc731c67222",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "3351e907-3d6b-442e-a724-f9a1abd2b1c4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2001,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3c64c895-605a-400c-b84c-96ee1b150afa",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b935420-a71f-4feb-99fa-a8977191bc1f",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub",
+              "timedOut": null,
+              "duration": 1696,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "960327da-5e63-4574-b1a7-7d0c7221afc8",
+              "parentUUID": "7b935420-a71f-4feb-99fa-a8977191bc1f",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "960327da-5e63-4574-b1a7-7d0c7221afc8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1696,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "fdce7ab6-c349-4209-971d-325deb37e16d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1ef8815-5a7a-4c13-aaca-d7c2019988aa",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1281,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "9a187691-af2c-4aca-b8c9-52b722bd54a7",
+              "parentUUID": "f1ef8815-5a7a-4c13-aaca-d7c2019988aa",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a187691-af2c-4aca-b8c9-52b722bd54a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1281,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "02a0fd59-97f4-4094-b8d9-9ba44e5f1f23",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3564de73-b1a8-45ff-a647-408dfef5fbde",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 1904,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "4dfe1ea1-5c13-462b-9c87-678a9e687ca3",
+              "parentUUID": "3564de73-b1a8-45ff-a647-408dfef5fbde",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4dfe1ea1-5c13-462b-9c87-678a9e687ca3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1904,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
