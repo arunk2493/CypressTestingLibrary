@@ -1,6 +1,6 @@
 # CypressTestingLibrary
 
-This project is executed with a sample angular project.
+This project is executed with an angular project and can be found here
 git clone https://github.com/getgauge-contrib/compareBrowserAutomationTools
 
 Extract the above project and start the app using npm run build, npm start
