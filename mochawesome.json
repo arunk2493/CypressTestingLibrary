@@ -1,15 +1,15 @@
 {
   "stats": {
-    "suites": 38,
-    "tests": 38,
-    "passes": 27,
+    "suites": 46,
+    "tests": 46,
+    "passes": 35,
     "pending": 0,
     "failures": 11,
     "start": "2021-02-27T15:24:41.858Z",
-    "end": "2021-02-27T19:00:10.974Z",
-    "duration": 110728,
-    "testsRegistered": 38,
-    "passPercent": 71.05263157894737,
+    "end": "2021-03-01T03:38:07.598Z",
+    "duration": 121569,
+    "testsRegistered": 46,
+    "passPercent": 76.08695652173913,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -2193,6 +2193,470 @@
           "pending": [],
           "skipped": [],
           "duration": 1281,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "723c56d1-e9ce-452a-a921-152d9f82f33d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/intercept1.spec.ts",
+      "file": "cypress/integration/examples/intercept1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a0c4bca0-9bec-41ac-b5d7-cbc860978e4d",
+          "title": "Network Interception",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Sample Intercept 1",
+              "fullTitle": "Network Interception Sample Intercept 1",
+              "timedOut": null,
+              "duration": 1103,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', 'http://localhost:3000/api/customers/page/0/10', { fixture: 'page1.json' });\ncy.visit('http://localhost:3000/customers');\n//Asserting a sample customer from the mock, the mock is present in the fixtures folder by default\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');",
+              "err": {},
+              "uuid": "1376ab24-efa8-406c-941c-157b560df12f",
+              "parentUUID": "a0c4bca0-9bec-41ac-b5d7-cbc860978e4d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1376ab24-efa8-406c-941c-157b560df12f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1103,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "9ba144e5-bc82-4387-9ff0-dddd4ad15369",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c89eda07-b83d-40bf-b94d-0d0f3ea6c178",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 2228,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "03985a27-3bff-472d-b98b-ac6d254617e3",
+              "parentUUID": "c89eda07-b83d-40bf-b94d-0d0f3ea6c178",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "03985a27-3bff-472d-b98b-ac6d254617e3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2228,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "093eb81b-521f-4765-ab37-97da6e0af912",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6bbea3df-cfd6-4817-9e11-f1778de065f7",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub Testing Library",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub Testing Library",
+              "timedOut": null,
+              "duration": 604,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "9f067e82-0bba-4724-8a48-a167c79536ea",
+              "parentUUID": "6bbea3df-cfd6-4817-9e11-f1778de065f7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9f067e82-0bba-4724-8a48-a167c79536ea"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 604,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "2ce3e66c-7afa-4b1a-8fdd-96639d92546d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "1b65ac8e-0d5a-4f99-aa29-f6d60b1685d5",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1160,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "2f21d265-1e41-4cfc-8205-765e611095be",
+              "parentUUID": "1b65ac8e-0d5a-4f99-aa29-f6d60b1685d5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2f21d265-1e41-4cfc-8205-765e611095be"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1160,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "f0c4ed0b-3880-400f-9e34-d24726d490bf",
+      "title": "",
+      "fullFile": "cypress/integration/examples/intercept1.spec.ts",
+      "file": "cypress/integration/examples/intercept1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5291e109-ae39-4e53-9282-5fdc43733d82",
+          "title": "Network Interception",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Sample Intercept 1- Mock the customer page from 10 to 8",
+              "fullTitle": "Network Interception Sample Intercept 1- Mock the customer page from 10 to 8",
+              "timedOut": null,
+              "duration": 1590,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept('GET', 'http://localhost:3000/api/customers/page/0/10', { fixture: 'page1.json' });\ncy.intercept('GET', 'http://localhost:3000/api/customers/1', { fixture: 'mock-order-customer1.json' });\ncy.visit('http://localhost:3000/customers');\n//Asserting a sample customer from the mock, the mock is present in the fixtures folder by default\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist').first().click();\ncy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\ncy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\ncy.findByTestId('customerOrderDetails').findAllByText('$7.99').first().should('exist');\ncy.findByTestId('customerOrderDetails').findAllByText('$7.99').first().should('exist');\n//Redirect to home page\ncy.findByText('View all Customers').should('exist').click();\n//verify the successful redirection\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');",
+              "err": {},
+              "uuid": "72b69794-cb09-4887-8000-8ded281213ee",
+              "parentUUID": "5291e109-ae39-4e53-9282-5fdc43733d82",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "72b69794-cb09-4887-8000-8ded281213ee"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1590,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "b69f784e-9a2f-4a3b-a391-b29e243d9d6a",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login.spec.ts",
+      "file": "cypress/integration/examples/login.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "457792ad-084a-4334-9ab0-ba11e238d47c",
+          "title": "Git hub Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub",
+              "fullTitle": "Git hub Login Login to GitHub",
+              "timedOut": null,
+              "duration": 1914,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();",
+              "err": {},
+              "uuid": "02d892e1-e917-4d76-9a00-6eeb158a57a7",
+              "parentUUID": "457792ad-084a-4334-9ab0-ba11e238d47c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "02d892e1-e917-4d76-9a00-6eeb158a57a7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1914,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "7419c88d-a9c1-4231-8bdb-a745954c903d",
+      "title": "",
+      "fullFile": "cypress/integration/examples/login3.spec.ts",
+      "file": "cypress/integration/examples/login3.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d6a9078a-1454-44cf-8626-37cd292fba10",
+          "title": "Git hub Login Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login to GitHub Testing Library",
+              "fullTitle": "Git hub Login Testing Library Login to GitHub Testing Library",
+              "timedOut": null,
+              "duration": 706,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://github.com/login');\ncy.findByLabelText('Username or email address').should('exist');\ncy.findByDisplayValue('Sign in').should('exist');\n/*cy.get('#login_field').type(\"arunk2493\");\ncy.get('#password').type(\"password\");\ncy.get('input[value=\"Sign in\"]').click();\nconst a = cy.get('.flash >div').contains('Incorrect username or password.')\nconsole.log(a);*/",
+              "err": {},
+              "uuid": "c157924a-e2f4-4886-a9d1-1862d832dd00",
+              "parentUUID": "d6a9078a-1454-44cf-8626-37cd292fba10",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c157924a-e2f4-4886-a9d1-1862d832dd00"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 706,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "3049ccf1-71f2-4332-a089-267c1a8d5880",
+      "title": "",
+      "fullFile": "cypress/integration/examples/test-lib1.spec.ts",
+      "file": "cypress/integration/examples/test-lib1.spec.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "046073fa-6175-441d-a437-a2c8657d4cfe",
+          "title": "Angular App Testing Library",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify the Menu options in UI",
+              "fullTitle": "Angular App Testing Library Verify the Menu options in UI",
+              "timedOut": null,
+              "duration": 1536,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/customers');\ncy.findByAltText('logo').should('exist');\ncy.findByText('Card View').should('exist');\ncy.findByText('List View').should('exist');\ncy.findByText('Map View').should('exist');\ncy.findByText('New Customer').should('exist');\n//to get an attribute of an element, add the element in get and provide the attribute name in the invoke method(2nd arguement)\ncy.get('.navbar-brand').invoke('attr', 'href').should('contain', '/customers');\ncy.findByText('Filter:').should('exist');\n//Add data-testId for a div and verify the names\ncy.findByTestId('customerGrid').findByText('Ted James').should('exist');\ncy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');\ncy.findByTestId('customerGrid').findAllByText('View Orders').should('exist');\n/* cy.get('.clearfix:nth-child(1) > div:nth-child(2) > a').click();\n cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$7.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('Shoes').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$199.99').should('exist');\n cy.findByTestId('customerOrderDetails').findByText('$207.98').should('exist');\n cy.findByText('View all Customers').should('exist');*/",
+              "err": {},
+              "uuid": "0c2841b4-42ee-49d9-a3f6-aefe0d3c80e7",
+              "parentUUID": "046073fa-6175-441d-a437-a2c8657d4cfe",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0c2841b4-42ee-49d9-a3f6-aefe0d3c80e7"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1536,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
