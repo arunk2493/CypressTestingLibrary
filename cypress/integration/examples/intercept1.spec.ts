@@ -11,7 +11,10 @@ describe('Network Interception',()=>{
         //Asserting a sample customer from the mock, the mock is present in the fixtures folder by default
         cy.findByTestId('customerGrid').findByText('Ted James').should('exist');
         cy.findByTestId('customerGrid').findByText('Phoenix, Arizona').should('exist');
-        cy.findByTestId('customerGrid').findAllByText('View Orders').should('exist').first().click();
+        //cy.findByTestId('customerGrid').findAllByText('View Orders').should('exist').first().click();
+        cy.findByTestId('customerGrid').findAllByText('View Orders').should('exist').then(elem => {
+            elem[0].click();
+        });
         cy.findByTestId('customerOrderDetails').findByText('Orders for Ted James').should('exist');
         cy.findByTestId('customerOrderDetails').findByText('Basketball').should('exist');
         cy.findByTestId('customerOrderDetails').findAllByText('$7.99').first().should('exist');
